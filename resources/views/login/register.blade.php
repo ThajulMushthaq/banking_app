@@ -7,7 +7,7 @@
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <link rel="icon" href="" type="image/x-icon" />
 
-    <link rel="stylesheet" href="{{ asset('/admin/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -90,32 +90,10 @@
             </div>
         </div>
     </form>
-    <!--     <div class="login-account">
-               <span class="msg">Don't have an account yet ?</span>
-               <a href="#" id="show-signup" class="link">Sign Up</a>
-            </div> -->
 
     <div class="container container-signup animated fadeIn">
         <p class="text-center">Alredy have an account? <a href="{{ url('/') }}">Sign in</a></p>
     </div>
-
-
-
-    <script src="{{ asset('/assets/admin/js/core/jquery.3.2.1.min.js') }}"></script>
-    <script src="{{ asset('/assets/admin/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js') }}"></script>
-    <script src="{{ asset('/assets/admin/js/core/popper.min.js') }}"></script>
-    <script src="{{ asset('/assets/admin/js/core/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('/assets/admin/js/ready.js') }}"></script>
-
-    <script src="{{ asset('/assets/admin/js/plugin/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
-    <!-- AdminTheme Alerts -->
-    <script src="{{ asset('/assets/admin/js/theme/alerts.js') }}"></script>
-
-    @if (Session::has('error'))
-        <script>
-            tfna_alert_danger('Error', '{{ Session::get('error') }}');
-        </script>
-    @endif
 
 </body>
 

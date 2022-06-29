@@ -60,7 +60,7 @@ class LoginController extends Controller
     public function register_user(RegisterRequest $request)
     {
         $user = User::create($request->validated());
-        // dd($user);
+        dd($user);
 
         auth()->login($user);
 
